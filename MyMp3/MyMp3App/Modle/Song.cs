@@ -17,13 +17,14 @@ namespace MyMp3.MyMp3App
         public string nameSong { get; set; }
         public string nameSinger { get; set; }
         public string nameAbulm { get; set; }
-        public string time { get; set; }
-        public Song(string nameSong,string nameSinger,string nameAbum,String time)
+        public long time { get; set; }
+        public int state { get; set; }
+        public Song(string nameSong,string nameSinger,string nameAbum,long time)
         {
             this.nameAbulm = nameAbulm;
             this.nameSinger = nameSinger;
             this.nameSong = nameSong;
             this.time = time;
-        }
+        } 
     }
 }

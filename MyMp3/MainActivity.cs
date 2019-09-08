@@ -3,6 +3,7 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Widget;
+using MyMp3.MyMp3App.Ui.fragment;
 
 namespace MyMp3
 {
@@ -15,6 +16,9 @@ namespace MyMp3
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+            MainMp3 main = new MainMp3();
+            SupportFragmentManager.BeginTransaction().Replace(Resource.Id.layout_content, main)
+                .Show(main).Commit();
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {

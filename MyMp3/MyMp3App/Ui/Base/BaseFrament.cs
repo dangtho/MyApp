@@ -21,20 +21,6 @@ namespace MyMp3.MyMp3App.Ui.Base
 
         }
 
-        public bool HasPermistion(Context context, String[] permissions)
-        {
-            if (Build.VERSION.SdkInt >= Build.VERSION_CODES.M && context !=null && permissions !=null)
-            {
-                foreach( var per in permissions)
-                {
-                    if(ActivityCompat.CheckSelfPermission(context,per)!=Android.Content.PM.Permission.Granted)
-                    {
-                        return false;
-                    }
-                }
-            }
-            return true;
-        }
-      
+       
     }
 }

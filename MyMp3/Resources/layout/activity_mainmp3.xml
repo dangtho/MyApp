@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ae0048ff"
+    android:layout_height="match_parent">
+     <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcvListSong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+      <LinearLayout
+            android:id="@+id/lnl"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_alignParentBottom="true"
+            android:background="#ae0048ff"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip">
+
+            <LinearLayout
+                android:id="@+id/lnlo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nameSong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="name song"
+                    android:textColor="#FFF"
+                    android:textSize="16dip" />
+
+                <TextView
+                    android:id="@+id/nameSinger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="name song"
+                    android:textColor="#FFF"
+                    android:textSize="12dip"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imgPrivious"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_privous" />
+
+                <ImageView
+                    android:id="@+id/imgPlay"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_play" />
+
+                <ImageView
+                    android:id="@+id/imgNext"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_next" />
+            </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>
